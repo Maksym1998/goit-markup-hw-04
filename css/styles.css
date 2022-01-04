@@ -126,7 +126,21 @@ img {
 
 .header-contacts{
   display: flex;
-  margin-left: 331px;
+  margin-left:auto;
+}
+
+
+.contact-icon{
+  width: 16px;
+  height:12px ;
+  margin-right: 10px;
+  fill: currentColor;
+} 
+
+.contact-icon:hover
+.contact-icon:focus{
+  color: #2196F3;
+
 }
 
 .header-contact-item{
@@ -169,8 +183,17 @@ img {
 
 /*------------ HERO -----------------*/
 .hero{
-  background-color: var(--background-color-2);
+  width: 1600px;
+  background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)),
+  url(../images/hero-bg.jpg);
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:rgba(47, 48, 58, 0.4);
+  
 }
+
 
 .hero-container{
   min-height: 600px;
@@ -213,6 +236,27 @@ img {
 
 }
 /*------------ ADVANTAGES -----------------*/
+
+
+.adv-icon{
+  width: 70px;
+  height: 70px;
+  margin-top: 25px;
+  
+ 
+  
+}
+
+.adv-icon-bg{
+  background-color: #F5F4FA;
+  height: 120px;
+  margin-bottom: 30px;
+  text-align: center;
+
+  
+  
+}
+
 .adv-list{
   display: flex;
   padding-top: 94px;
@@ -288,6 +332,47 @@ img {
   margin-top: 10px;
   line-height: 1.19;
 }
+
+.team-soc{
+  display: flex;
+  justify-content: center;
+}
+
+.team-soc-item{
+  
+}
+
+
+.team-soc-item:not(:last-child){
+  margin-right: 10px;
+}
+
+.soc-icon{
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  color: var(--color-main);
+}
+
+.soc-icon:hover,.soc-icon:focus{
+  color: #FFFFFF;
+}
+.team-soc-link:focus,.team-soc-link:hover{
+  background-color: #2196F3;
+}
+
+.team-soc-link{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  
+}
+
 
 /*------------ FOOTER -----------------*/
 .footer{
