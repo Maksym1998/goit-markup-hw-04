@@ -97,7 +97,7 @@ img {
 
 .header-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .logo {
@@ -125,11 +125,12 @@ img {
 .header-contacts {
   display: flex;
   margin-left: auto;
+  align-items: baseline;
 }
 
 .contact-icon {
-  width: 16px;
-  height: 12px;
+  width: 20px;
+  height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -159,8 +160,8 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: block;
 }
 
@@ -177,13 +178,15 @@ img {
 
 /*------------ HERO -----------------*/
 .hero {
-  width: 1600px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero-bg.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(47, 48, 58, 0.4);
@@ -325,17 +328,18 @@ img {
 .soc-icon {
   width: 20px;
   height: 20px;
+
   fill: currentColor;
-  color: var(--color-main);
 }
 
-.soc-icon:hover,
-.soc-icon:focus {
-  color: #ffffff;
+.team-soc-link {
+  color: #afb1b8;
 }
+
 .team-soc-link:focus,
 .team-soc-link:hover {
   background-color: #2196f3;
+  color: #ffffff;
 }
 
 .team-soc-link {
@@ -369,7 +373,7 @@ img {
   height: 92px;
   border: 1px solid #afb1b8;
   fill: currentColor;
-  color: var(--color-main);
+  color: #afb1b8;
 }
 .client-icon:hover,
 .client-icon:focus {
