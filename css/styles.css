@@ -123,8 +123,9 @@ img {
 }
 
 .header-contacts {
-  display: flex;
   margin-left: auto;
+  display: flex;
+
   align-items: baseline;
 }
 
@@ -163,6 +164,9 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
   display: block;
+  display: flex;
+
+  align-items: center;
 }
 
 .curent {
